@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book — Nails by Jas</title>
+<meta name="description" content="Book a nail appointment with Jasmine.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Parisienne&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<nav class="nav">
+  <div class="wrap nav-in">
+    <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
+    <a href="index.html" style="display:block"><img class="logo-nav" src="assets/logo.jpg" alt="Nails by Jas"></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About Jas</a>
+      <a href="book.html" class="on">Book</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <span class="nav-spacer" aria-hidden="true"></span>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="about.html">About Jas</a>
+    <a href="book.html" class="on">Book</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+<header class="page-head">
+  <p class="crumb"><a href="index.html">Home</a> · Book</p>
+  <h1>Book an appointment</h1>
+  <p class="script">can't wait to see you ♡</p>
+  <p class="sub">Pick a service, pick a time, and you'll get a confirmation email right away.</p>
+</header>
+
+<section class="section">
+  <div class="wrap book-in">
+    <div>
+      <div class="embed">
+        <span class="label">Booking calendar</span>
+        <p>Live scheduler drops in here — Square, Acuity, or Cal.com.</p>
+      </div>
+    </div>
+    <div>
+        <div class="policy"><h4>Deposit</h4><p>$20 to hold your appointment, applied to your total. Sets aren't confirmed until it's paid.</p></div>
+        <div class="policy"><h4>Cancelling</h4><p>Let me know 48 hours ahead and your deposit moves to the new date. Inside 48 hours it doesn't carry over.</p></div>
+        <div class="policy"><h4>Running late</h4><p>More than 15 minutes and we may need to simplify the design or rebook. It's a solo chair, so time doesn't stretch.</p></div>
+        <div class="policy"><h4>Coming alone</h4><p>The space fits one client. Please don't bring guests or kids.</p></div>
+      <p style="font-size:14px;color:var(--grey);margin-top:20px">Questions before you book? <a href="contact.html" style="color:var(--pink)">Send me a message</a> or check the <a href="faq.html" style="color:var(--pink)">FAQ</a>.</p>
+    </div>
+  </div>
+</section>
+<footer id="contact-info">
+  <div class="foot">
+    <div class="wrap foot-in">
+      <div class="foot-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s7-6 7-11a7 7 0 1 0-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        Based in Ridgecrest, CA
+      </div>
+      <div class="foot-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 3h4l2 5-2.5 1.5a12 12 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2.2 2A17 17 0 0 1 3 5.2 2 2 0 0 1 5 3z"/></svg>
+        <a href="tel:7601234567">(760) 123-4567</a>
+      </div>
+      <div class="foot-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+        <a href="https://instagram.com/nailsbyjas">@nailsbyjas</a>
+      </div>
+      <div class="foot-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+        By appointment only
+      </div>
+    </div>
+    <div class="foot-bar">
+      © 2026 Nails By Jas. All rights reserved.
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7.5-4.7-9.5-9A5.2 5.2 0 0 1 12 6.6 5.2 5.2 0 0 1 21.5 12c-2 4.3-9.5 9-9.5 9z"/></svg>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.querySelector('.burger').addEventListener('click', function(){
+  var m = document.getElementById('mobile-menu');
+  var open = m.classList.toggle('open');
+  this.setAttribute('aria-expanded', open);
+});
+</script>
+</body>
+</html>
