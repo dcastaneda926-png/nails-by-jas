@@ -353,3 +353,5 @@ a{color:inherit}
   .contact-grid{grid-template-columns:1fr;gap:32px}
   .page-head{padding:38px 24px 44px}
 }
+
+.shot img{width:100%;height:100%;object-fit:cover;display:block}
